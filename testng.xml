@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+
+ <listeners>
+        <listener class-name="Utilities.ExtentReportManager"/>
+    </listeners>
+  <test  name="FunctionalTests">
+   <parameter name="os" value="windows"/>
+  <parameter name="browser" value="chrome"/>
+      <classes>
+      <class name="Tests.BookingConfirmationTest"/>
+      <class name="Tests.SearchHotelTest"/>
+      <class name="Tests.BookingPageTest"/>
+      <class name="Tests.LogOutPageTest"/>
+      <class name="Tests.LoginTest"/>
+  
+    </classes>
+  </test> 
+    <!-- Test -->
+</suite> <!-- Suite -->
